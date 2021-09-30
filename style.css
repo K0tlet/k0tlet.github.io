@@ -18,7 +18,7 @@ h2#iam{
 
 img#ava{
   position: absolute;
-  right: 110%;
+  right: 105%;
   top: 5%;
 }
 
@@ -31,6 +31,7 @@ p#copyright{
 
 p#info{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  position: absolute;
-  left: 33%;
+  font-size: larger;
+  position: relative;
+  left: 40%;
 }
