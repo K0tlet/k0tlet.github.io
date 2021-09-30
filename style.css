@@ -1,0 +1,36 @@
+p,h2,h3,h4,h5,h1 {
+    color: rgb(209, 209, 209);
+  }
+
+h1#main{
+  color: rgb(189, 189, 189);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  left: 10%;
+
+}
+
+h2#iam{
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  left: 10%; 
+}
+
+img#ava{
+  position: absolute;
+  right: 110%;
+  top: 5%;
+}
+
+p#copyright{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+  position: relative;
+  left: 78%;
+}
+
+p#info{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  left: 33%;
+}
