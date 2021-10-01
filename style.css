@@ -38,17 +38,12 @@ p#info{
 h1#aboutm{
   position: relative;
   left: 10%;
+  
 }
 
 p#aboutme{
   position: relative;
   left: 10%;
-}
-
-body{
-  block-size: 50%;
-}
-
-head{
-  block-size: 50%;
+  font-size: larger;
+  font-family:monospace;
 }
