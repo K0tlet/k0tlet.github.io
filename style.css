@@ -1,4 +1,3 @@
-
 p,h2,h3,h4,h5,h1 {
     color: rgb(209, 209, 209);
   }
@@ -8,42 +7,109 @@ h1#main{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   position: relative;
   left: 10%;
+}
 
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 10px rgb(125, 251, 255),
+    0 0 20px rgb(145, 233, 255),
+    0 0 40px rgb(0, 153, 255),
+    0 0 80px rgb(0, 102, 255),
+    0 0 90px rgb(0, 47, 255),
+    0 0 100px rgb(0, 47, 255),
+    0 0 150px rgb(38, 0, 255);
+    font-size:xx-large;
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  margin-left: -50%;
+  position: relative;
+
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 h2#iam{
   font-family: 'Times New Roman', Times, serif;
   position: relative;
-  left: 10%; 
+  color: #fff;
+  text-shadow:
+  0 0 5px rgb(141, 232, 255),
+  0 0 10px rgb(125, 251, 255),
+  0 0 20px rgb(145, 233, 255),
+  0 0 40px rgb(0, 153, 255),
+  0 0 80px rgb(0, 102, 255),
+  0 0 90px rgb(0, 47, 255),
+  0 0 100px rgb(0, 47, 255),
+  0 0 150px rgb(38, 0, 255);
+
+  left: 15%;
+  width: 50%;
 }
 
 img#ava{
   position:relative;
-  left: 10%;
-}
-
-p#copyright{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: small;
-  position: relative;
-  left: 10%;
+  border-radius: 10%;
+  left: 15%;
 }
 
 p#info{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  position: relative;
-  left: 10%;
+  position:relative;
+  left:50%;
+  bottom:20%;
+  width:50%;
 }
 
 h1#aboutm{
   position: relative;
-  left: 10%;
-  
+  color: #fff;
+  text-shadow:
+  0 0 10px rgb(125, 251, 255),
+  0 0 20px rgb(145, 233, 255),
+  0 0 40px rgb(0, 153, 255),
+  0 0 80px rgb(0, 102, 255),
+  0 0 90px rgb(0, 47, 255),
+  0 0 100px rgb(0, 47, 255),
+  0 0 150px rgb(38, 0, 255);
 }
 
 p#aboutme{
   position: relative;
-  left: 10%;
-  font-size: larger;
-  font-family:monospace;
+  left: 15%;
+  width: 50%;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#background{
+  width:80%;
+  height:100%;
+  background:rgba(20, 18, 18, 0.253);
+  position: absolute;
+  margin-top: 86px;
+  left: 10%;
+}
+
+#uppper_title{
+  width:100%;
+  height:10%;
+  background:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
