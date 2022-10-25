@@ -1,0 +1,93 @@
+<html style="background-color:#000000">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>TEST - Перша тема</title>
+
+        <!-- Шрифти -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <!-- --- -->
+
+        <!-- --- -->
+        <div class="loader">Завантаження...</div>
+        <!-- --- -->
+        <div class="menumenu theme1 darktheme1 hidemenu">Меню</div>
+        
+        <div class="settingsmenu theme1 darktheme1 hidemenu">
+            <div class="settingsgrid">   
+                <span class="settingstitle">Налаштування</span>
+                <button class="button tswitch light">Світла тема</button>
+                <button class="button tswitch dark">Темна тема</button>
+            </div>
+        </div>
+
+    </head>
+    <body class="main">
+        <div class="upcontent">
+            <!-- --- -->
+            <div class="item upperpan">
+                <a href="index.html"><div class="logo">TEST</div></a>
+                <button class="button button1 menus"><img class="icon" src="../svg/info.svg"></button>
+                <button class="button button2 menus"><img class="icon" src="../svg/settings.svg"></button>
+                <button class="button button3 menus"><img class="icon" src="../svg/menu.svg"></button>
+            </div>
+            <!-- --- -->
+            <div class="item free">
+                
+            </div>
+        </div>
+        <!-- --- -->
+        <div class="content theme darktheme">
+            <div class="bigtext">Ітак це перша тема</div>
+            <div class="smalltext"></div>
+        </div>
+        <!-- --- -->
+        <div class="theme1 footer darktheme1">
+            <button class="button link">Telegram</button>
+            <button class="button link">Instagram</button>
+            <button class="button link">Github</button>
+            <button class="button link">Test 404</button>
+            <button class="button link">Donate</button>
+            <button class="button link">Email</button>
+        </div>
+    </body>
+    <!-- JQUERY / JS -->
+    <script type="text/javascript">
+            function loaded(){
+                $(".loader").fadeOut(800);
+                $(".upperpan").css({opacity: 1});
+            };
+            function showsettings(){
+                $(".settingsmenu").slideToggle(400);
+                $(".menumenu").slideUp(200);
+            };
+            function showmenu(){
+                $(".menumenu").slideToggle(400);
+                $(".settingsmenu").slideUp(200);
+            };
+            $(".button2").click(showsettings);
+            $(".button3").click(showmenu);
+            window.setTimeout(loaded, 1000);
+
+
+            // Тема
+            function lighttheme(){
+                $(".theme").addClass("lighttheme");
+                $(".theme").removeClass("darktheme");
+
+                $(".theme1").addClass("lighttheme1");
+                $(".theme1").removeClass("darktheme1");
+            }
+            function darktheme(){
+                $(".theme").addClass("darktheme");
+                $(".theme").removeClass("lighttheme");
+
+                $(".theme1").addClass("darktheme1");
+                $(".theme1").removeClass("lighttheme1")
+            }
+
+            $(".light").click(lighttheme);
+            $(".dark").click(darktheme);
+    </script>
+</html>

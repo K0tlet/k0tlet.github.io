@@ -1,0 +1,111 @@
+<html style="background-color:#000000">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>TEST - Головна</title>
+
+        <!-- Шрифти -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <!-- --- -->
+
+        <!-- --- -->
+        <div class="loader">Завантаження...</div>
+        <!-- --- -->
+        <div class="menumenu theme1 darktheme1 hidemenu">Меню</div>
+        
+        <div class="settingsmenu theme1 darktheme1 hidemenu">
+            <div class="settingsgrid">   
+                <span class="settingstitle">Налаштування</span>
+                <button class="button tswitch light">Світла тема</button>
+                <button class="button tswitch dark">Темна тема</button>
+            </div>
+        </div>
+
+    </head>
+    <body class="main">
+        <div class="upcontent">
+            <!-- --- -->
+            <div class="item upperpan">
+                <a href="index.html"><div class="logo">TEST</div></a>
+                <button class="button button1 menus"><a href="about.html"><img class="icon" src="svg/info.svg"></a></button>
+                <button class="button button2 menus"><img class="icon" src="svg/settings.svg"></button>
+                <button class="button button3 menus"><img class="icon" src="svg/menu.svg"></button>
+            </div>
+            <!-- --- -->
+            <div class="item free">
+                
+            </div>
+        </div>
+        <!-- --- -->
+        <div class="content theme darktheme">
+            <div class="imagecont image1"><img class="img" src="https://preview.redd.it/6k4sujr5u7m81.jpg?auto=webp&s=c2af0d2ee9f8dfa3cc3af90d24927f3f4bfdb16a"></div>
+            <div class="textcont text1 theme1 darktheme1">
+                <span class="bigtext">Типа перша тема</span>
+                <span class="smalltext">Якийсь текст дуже класний який має описусати тему (напевно)</span>
+                <button class="button topic"><img src="svg/arrowr.svg">Більше</button>
+            </div>
+            
+            <div class="textcont text2 theme1 darktheme1">
+                <span class="bigtext">Друга тема!</span>
+                <span class="smalltext">Нічого не змінилось крім того шо це друга тема а не перша</span>
+                <button class="button topic"><img src="svg/arrowr.svg">Більше</button>
+            </div>
+            <div class="imagecont image2"><img class="img" src="https://miro.medium.com/max/1400/0*nJZk8_NkoZ1PMq9P.jpg"></div>
+            
+            <div class="imagecont image1"><img class="img" src="https://st.depositphotos.com/1907633/2181/i/600/depositphotos_21811707-stock-photo-businessman-hand-working-with-new.jpg"></div>
+            <div class="textcont text1 theme1 darktheme1">
+                <span class="bigtext">Якась дуже розумна тема з розумною картінкою</span>
+                <span class="smalltext">Графіки ідуть вверх вау бабло іде, це круто</span>
+                <button class="button topic"><img src="svg/arrowr.svg">Більше</button>
+            </div>
+        </div>
+        <!-- --- -->
+        <div class="theme1 footer darktheme1">
+            <button class="button link">Telegram</button>
+            <button class="button link">Instagram</button>
+            <button class="button link">Github</button>
+            <button class="button link">Test 404</button>
+            <button class="button link">Donate</button>
+            <button class="button link">Email</button>
+        </div>
+    </body>
+    <!-- JQUERY / JS -->
+    <script type="text/javascript">
+            function loaded(){
+                $(".loader").fadeOut(800);
+                $(".upperpan").css({opacity: 1});
+            };
+            function showsettings(){
+                $(".settingsmenu").slideToggle(400);
+                $(".menumenu").slideUp(200);
+            };
+            function showmenu(){
+                $(".menumenu").slideToggle(400);
+                $(".settingsmenu").slideUp(200);
+            };
+            $(".button2").click(showsettings);
+            $(".button3").click(showmenu);
+            window.setTimeout(loaded, 1000);
+
+
+            // Тема
+            function lighttheme(){
+                $(".theme").addClass("lighttheme");
+                $(".theme").removeClass("darktheme");
+
+                $(".theme1").addClass("lighttheme1");
+                $(".theme1").removeClass("darktheme1");
+            }
+            function darktheme(){
+                $(".theme").addClass("darktheme");
+                $(".theme").removeClass("lighttheme");
+
+                $(".theme1").addClass("darktheme1");
+                $(".theme1").removeClass("lighttheme1")
+            }
+
+            $(".light").click(lighttheme);
+            $(".dark").click(darktheme);
+    </script>
+</html>
