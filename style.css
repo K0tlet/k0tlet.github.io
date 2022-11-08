@@ -6,6 +6,10 @@ a{
     color: #D3D4D7; text-decoration: none;
 }
 
+@keyframes loaderglow {
+    from {box-shadow: 1px 0px 0px #018ABE;}
+    to {box-shadow: 15px 0px 0px #018ABE;}
+}
 .loader{
     position: fixed;
     width: 100%;
@@ -20,7 +24,34 @@ a{
     color: white;
     font-size: 64px;
     font-family: Ubuntu;
+
+    box-shadow: 1px 0px 0px #018ABE;
+    animation-name: loaderglow;
+    animation-duration: 2s;
 }
+
+@keyframes loader {
+    from {width: 1px;}
+    to {width: 100%;}
+}
+.emptyloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2%;
+    width: 50%;
+    background-color: #04060D;
+    border-radius: 30px;
+}
+.fillloader{
+    height: 100%;
+    width: 1%;
+    border-radius: 30px;
+    background-color: #018ABE;
+    animation-name: loader;
+    animation-duration: 2s;
+}
+
 
 .main{
     display: grid;
@@ -70,10 +101,10 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 48px 1fr;
-    background-image: url("https://images.pond5.com/abstract-motion-background-digital-binary-footage-073750003_prevstill.jpeg");
+    background-image: url("https://www.ge.com/content/dam/gepower-new/global/en_US/images/gas-new-site/products/digital-and-controls/cybersecurity/hero-proven-cyber-security-expertise.jpg");
     background-size: cover;
     background-blend-mode:darken;
-    background-color:rgb(0, 0, 0, 0.3);
+    background-color:rgb(0, 0, 0, 0.5);
     color: bisque;
 }
 .upperpan{
@@ -99,7 +130,8 @@ a{
     height: 30px;
 }
 .free{
-    text-align: center;
+    font-family: Ubuntu;
+    top: 48px;
 }
 .menus{
     height: 48px;
@@ -146,10 +178,10 @@ a{
     max-width:70%;
     max-height:70%;
     transition:all 0.5s;
-    box-shadow: 0px 0px 10px #D3D4D7;
+    box-shadow: 0px 0px 10px #02457A;
 }
 .img:hover{
-    box-shadow: 0px 0px 20px #D3D4D7;
+    box-shadow: 0px 0px 20px #018ABE;
 }
 .bigtext{
     font-size: 64px;
@@ -159,7 +191,7 @@ a{
     font-size: 24px;
     font-family: Ubuntu;
 }
-.topic{
+.topicenter{
     width: 30%;
     color: #04060D;
     font-size: 18px;
@@ -184,6 +216,35 @@ a{
     color: #04060D;
 }
 
+.topic{
+    display: none;
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;
+    border: solid #018ABE;
+    border-radius: 10px;
+}
+.topicpanel{
+    background-color: #018ABE;
+    color: #D3D4D7;
+    display: grid;
+    grid-template-rows: 48px;
+    grid-template-columns: 1fr 72px;
+    font-size: 46px;
+}
+.topicexit{
+    border-radius: 5px;
+    margin: 0px;
+    background-image: radial-gradient(rgb(150,0,0) 30%,rgb(255,0,0) 100%);
+}
+
+.framearticle{
+    width: 100%;
+    height: 94%;
+    border: none;
+}
 /* ТЕМИ */
 .lighttheme{
     color: #D6E8EE;

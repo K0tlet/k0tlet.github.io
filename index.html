@@ -10,9 +10,15 @@
         <!-- --- -->
 
         <!-- --- -->
-        <div class="loader">Завантаження...</div>
+        <div class="loader">
+            <div class="emptyloader"><div class="fillloader"></div></div>
+        </div>
         <!-- --- -->
-        <div class="menumenu theme1 darktheme1 hidemenu">Меню</div>
+        <div class="menumenu theme1 darktheme1 hidemenu">
+            <div class="menugrid">
+                <span class="settingstitle">Меню</span>
+            </div>
+        </div>
         
         <div class="settingsmenu theme1 darktheme1 hidemenu">
             <div class="settingsgrid">   
@@ -39,26 +45,41 @@
         </div>
         <!-- --- -->
         <div class="content theme darktheme">
-            <div class="imagecont image1"><img class="img" src="https://preview.redd.it/6k4sujr5u7m81.jpg?auto=webp&s=c2af0d2ee9f8dfa3cc3af90d24927f3f4bfdb16a"></div>
+            <div class="imagecont image1"><img class="img" src="https://h2globalcluster.eu/wp-content/uploads/2022/03/world-bg-small.jpg"></div>
             <div class="textcont text1 theme1 darktheme1">
-                <span class="bigtext">Типа перша тема</span>
-                <span class="smalltext">Якийсь текст дуже класний який має описусати тему (напевно)</span>
-                <button class="button topic"><img src="svg/arrowr.svg">Більше</button>
+                <span class="bigtext">Україна і Глобальна коаліція</span>
+                <span class="smalltext">Це проєкт Всесвітнього економічного форуму, обговорення якого розпочалася у 2019 році в межах платформи медіа, розваг та спорту, проте пандемія коронавірусу посилила виклики та прискорила запуск проєкту.</span>
+                <button class="button topicenter" id="1"><img src="svg/arrowr.svg">Більше</button>
             </div>
             
             <div class="textcont text2 theme1 darktheme1">
-                <span class="bigtext">Друга тема!</span>
-                <span class="smalltext">Нічого не змінилось крім того шо це друга тема а не перша</span>
-                <button class="button topic"><img src="svg/arrowr.svg">Більше</button>
+                <span class="bigtext">Типи загроз</span>
+                <span class="smalltext">Різні види загроз в інтернеті</span>
+                <button class="button topicenter" id="2"><img src="svg/arrowr.svg">Більше</button>
             </div>
-            <div class="imagecont image2"><img class="img" src="https://miro.medium.com/max/1400/0*nJZk8_NkoZ1PMq9P.jpg"></div>
+            <div class="imagecont image2"><img class="img" src="https://www.kliksolutions.com.ua/wp-content/uploads/2021/11/microsoftteams-image-428.png"></div>
             
-            <div class="imagecont image1"><img class="img" src="https://st.depositphotos.com/1907633/2181/i/600/depositphotos_21811707-stock-photo-businessman-hand-working-with-new.jpg"></div>
+            <div class="imagecont image1"><img class="img" src="https://www.pace.edu/sites/default/files/2022-05/seidenberg-hero-cybersecurity-homepage.jpg"></div>
             <div class="textcont text1 theme1 darktheme1">
-                <span class="bigtext">Якась дуже розумна тема з розумною картінкою</span>
-                <span class="smalltext">Графіки ідуть вверх вау бабло іде, це круто</span>
-                <button class="button topic"><img src="svg/arrowr.svg">Більше</button>
+                <span class="bigtext">Ваша безпека понад усе</span>
+                <span class="smalltext">Це ж ваша безпека</span>
+                <button class="button topicenter" id="3"><img src="svg/arrowr.svg">Більше</button>
             </div>
+
+            <div class="textcont text2 theme1 darktheme1">
+                <span class="bigtext">Інструкції поведінки в цифровому просторі</span>
+                <span class="smalltext">поведінка в цифровому просторі</span>
+                <button class="button topicenter" id="4"><img src="svg/arrowr.svg">Більше</button>
+            </div>
+            <div class="imagecont image2"><img class="img" src="https://www.esri.com/content/dam/esrisites/en-us/digital-twin/assets/acrgis-foundation-of-digital-twin-ebook-5050.jpg"></div>
+        
+            <div class="imagecont image1"><img class="img" src="https://images.pond5.com/binary-digital-blue-heart-shape-footage-021226904_prevstill.jpeg"></div>
+            <div class="textcont text1 theme1 darktheme1">
+                <span class="bigtext">Психологічна допомога</span>
+                <span class="smalltext"></span>
+                <button class="button topicenter" id="5"><img src="svg/arrowr.svg">Більше</button>
+            </div>
+        
         </div>
         <!-- --- -->
         <div class="theme1 footer darktheme1">
@@ -70,7 +91,20 @@
             <button class="button link">Email</button>
         </div>
     </body>
-    <!-- JQUERY / JS -->
+
+
+<!-- Короче самі теми вони будуть тут -->
+<div class="topic darktheme">
+    <div class="topiccontainer">
+        <div class="topicpanel">
+            <span></span>
+            <div style="font-size: 28px;" class="topicexit"><center style="position:relative; top: 18%;">X</center></div>
+        </div>
+    <iframe class="framearticle" src=""></iframe>
+</div>
+
+
+<!-- JQUERY / JS -->
     <script type="text/javascript">
             function loaded(){
                 $(".loader").fadeOut(800);
@@ -102,10 +136,26 @@
                 $(".theme").removeClass("lighttheme");
 
                 $(".theme1").addClass("darktheme1");
-                $(".theme1").removeClass("lighttheme1")
+                $(".theme1").removeClass("lighttheme1");
             }
 
             $(".light").click(lighttheme);
             $(".dark").click(darktheme);
+
+            // Панель з темами
+            function showtopic(){
+                $(".topic").fadeIn();
+            }
+            function hidetopic(){
+                $(".topic").fadeOut();
+            }
+
+            $(".topicenter").click(showtopic);
+            $(".topicexit").click(hidetopic);
+
+            $(".topicenter").click(function(){
+                var id = $(this).attr('id');
+                $(".framearticle").attr("src",("pages/"+id+".html"))
+            })
     </script>
 </html>
