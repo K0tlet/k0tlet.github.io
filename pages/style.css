@@ -30,7 +30,7 @@ html, body {
 }
 .text{
     font-size: 24px;
-    color: white;
+    color: rgb(180, 180, 180);
     margin: 1%;
     padding: 1%;
     border-radius: 15px;
@@ -42,10 +42,12 @@ html, body {
     font-style: bold;
     font-family: Ubuntu;
     font-weight: bold;
+    color: rgb(240, 240, 240);
 }
 .midtext{
     font-size: 30px;
     font-family: Ubuntu;
     padding: 1%;
     font-weight: 600;
+    color: rgb(230, 230, 230);
 }
