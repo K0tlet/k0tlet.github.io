@@ -31,14 +31,14 @@ a{
 }
 
 @keyframes loader {
-    from {width: 1px;}
+    from {width: 0px;}
     to {width: 100%;}
 }
 .emptyloader{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2%;
+    height: 1%;
     width: 50%;
     background-color: #04060D;
     border-radius: 30px;
@@ -75,7 +75,7 @@ a{
     left: calc(100% - 300px);
     border: 2px solid #3E8DE3;
     border-radius: 10px;
-    height: 250px;
+    height: 68px;
     width: 296px;
     display: none;
 }
@@ -118,7 +118,7 @@ a{
     backdrop-filter: blur(5px);
     height: 48px;
     display: grid;
-    grid-template-columns: 1fr 96px 96px 96px;
+    grid-template-columns: 1fr 96px 96px;
     grid-gap: 5px;
     grid-template-rows: 1fr;
     transition: all 1s;
@@ -199,21 +199,32 @@ a{
 
 .footer{
     display: grid;
-    grid-template-columns: 25% 25%;
-    grid-template-rows: repeat(1fr);
+    grid-template-columns: 20% 20%;
+    grid-template-rows: 1fr 64px 1fr;
     justify-items: center;
     justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    padding: 0px;
 }
 .link{
     font-size: 16px;
     font-family: Ubuntu;
-    width: 60%;
-    height: 70%;
+    width: 200px;
+    height: 64px;
     background-color:#02457A;
     color: #D3D4D7;
 }
 .link:hover{
     color: #04060D;
+}
+.linka{
+    height: 64px;
+    width: 200px;
+    grid-row: 2;
+    vertical-align: middle;
+    align-items: center;
+    justify-items: center;
 }
 
 .topic{

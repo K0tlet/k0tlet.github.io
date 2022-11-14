@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <title>TEST - Головна</title>
+        <title>YourSecurity - Головна</title>
 
         <!-- Шрифти -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
@@ -14,12 +14,6 @@
             <div class="emptyloader"><div class="fillloader"></div></div>
         </div>
         <!-- --- -->
-        <div class="menumenu theme1 darktheme1 hidemenu">
-            <div class="menugrid">
-                <span class="settingstitle">Меню</span>
-            </div>
-        </div>
-        
         <div class="settingsmenu theme1 darktheme1 hidemenu">
             <div class="settingsgrid">   
                 <span class="settingstitle">Налаштування</span>
@@ -33,10 +27,9 @@
         <div class="upcontent">
             <!-- --- -->
             <div class="item upperpan">
-                <a href="index.html"><div class="logo">TEST</div></a>
+                <a href="index.html"><div class="logo">YourSecurity - Головна</div></a>
                 <button class="button button1 menus"><a href="about.html"><img class="icon" src="svg/info.svg"></a></button>
-                <button class="button button2 menus"><img class="icon" src="svg/settings.svg"></button>
-                <button class="button button3 menus"><img class="icon" src="svg/menu.svg"></button>
+                <button class="button button2 menus"><img class="icon" src="svg/menu.svg"></button>
             </div>
             <!-- --- -->
             <div class="item free">
@@ -62,13 +55,13 @@
             <div class="imagecont image1"><img class="img" src="https://www.pace.edu/sites/default/files/2022-05/seidenberg-hero-cybersecurity-homepage.jpg"></div>
             <div class="textcont text1 theme1 darktheme1">
                 <span class="bigtext">Ваша безпека понад усе</span>
-                <span class="smalltext">Це ж ваша безпека</span>
+                <span class="smalltext">10 простих правил які допоможуть покращити вашу безпеку</span>
                 <button class="button topicenter" id="3"><img src="svg/arrowr.svg">Більше</button>
             </div>
 
             <div class="textcont text2 theme1 darktheme1">
                 <span class="bigtext">Інструкції поведінки в цифровому просторі</span>
-                <span class="smalltext">поведінка в цифровому просторі</span>
+                <span class="smalltext">Рекомендації і безпека дітей у цифровому просторі</span>
                 <button class="button topicenter" id="4"><img src="svg/arrowr.svg">Більше</button>
             </div>
             <div class="imagecont image2"><img class="img" src="https://www.esri.com/content/dam/esrisites/en-us/digital-twin/assets/acrgis-foundation-of-digital-twin-ebook-5050.jpg"></div>
@@ -83,12 +76,8 @@
         </div>
         <!-- --- -->
         <div class="theme1 footer darktheme1">
-            <button class="button link">Telegram</button>
-            <button class="button link">Instagram</button>
-            <button class="button link">Github</button>
-            <button class="button link">Test 404</button>
-            <button class="button link">Donate</button>
-            <button class="button link">Email</button>
+            <a class="linka" href="https://github.com/K0tlet"><button class="button link">Github</button></a>
+            <a class="linka" href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcRzCpGbbksDnmjkLSHvlvTnrgnlKKtmwqVWzRdntXnDfHjjwtQqVdlBpShcmwcqnSgjTkvSB"><button class="button link">Email</button></a>
         </div>
     </body>
 
@@ -112,14 +101,8 @@
             };
             function showsettings(){
                 $(".settingsmenu").slideToggle(400);
-                $(".menumenu").slideUp(200);
-            };
-            function showmenu(){
-                $(".menumenu").slideToggle(400);
-                $(".settingsmenu").slideUp(200);
             };
             $(".button2").click(showsettings);
-            $(".button3").click(showmenu);
             window.setTimeout(loaded, 1000);
 
 

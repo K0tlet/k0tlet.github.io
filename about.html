@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <title>TEST - Про сайт</title>
+        <title>YourSecurity - Про сайт</title>
 
         <!-- Шрифти -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
@@ -14,8 +14,6 @@
             <div class="emptyloader"><div class="fillloader"></div></div>
         </div>
         <!-- --- -->
-        <div class="menumenu theme1 darktheme1 hidemenu">Меню</div>
-        
         <div class="settingsmenu theme1 darktheme1 hidemenu">
             <div class="settingsgrid">   
                 <span class="settingstitle">Налаштування</span>
@@ -29,10 +27,9 @@
         <div class="upcontent">
             <!-- --- -->
             <div class="item upperpan">
-                <a href="index.html"><div class="logo">TEST</div></a>
+                <a href="index.html"><div class="logo">YourSecurity - Про сайт</div></a>
                 <button class="button button1 menus"><img class="icon" src="svg/info.svg"></button>
-                <button class="button button2 menus"><img class="icon" src="svg/settings.svg"></button>
-                <button class="button button3 menus"><img class="icon" src="svg/menu.svg"></button>
+                <button class="button button2 menus"><img class="icon" src="svg/menu.svg"></button>
             </div>
             <!-- --- -->
             <div class="item free">
@@ -46,11 +43,7 @@
         </div>
         <!-- --- -->
         <div class="theme1 footer darktheme1">
-            <button class="button link">Telegram</button>
-            <button class="button link">Instagram</button>
             <button class="button link">Github</button>
-            <button class="button link">Test 404</button>
-            <button class="button link">Donate</button>
             <button class="button link">Email</button>
         </div>
     </body>
@@ -64,12 +57,7 @@
                 $(".settingsmenu").slideToggle(400);
                 $(".menumenu").slideUp(200);
             };
-            function showmenu(){
-                $(".menumenu").slideToggle(400);
-                $(".settingsmenu").slideUp(200);
-            };
             $(".button2").click(showsettings);
-            $(".button3").click(showmenu);
             window.setTimeout(loaded, 1000);
 
 

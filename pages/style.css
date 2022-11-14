@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 256px 1fr;
+}
+.bg{
+    background-image: url(https://64.media.tumblr.com/70c7fdf1c0af225de84d0787c33b027b/268a82ca6cb2a0f5-c6/s500x750/021df7474373701295ce311cf0bc29fd8e68e69a.gif), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8),rgba(0,0,0,1));
+    background-blend-mode:darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter:  blur(10px);
+
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+}
+.name{
+    font-size: 90px;
+    text-align: center;
+    vertical-align: middle;
+    color: whitesmoke;
+}
+.text{
+    font-size: 24px;
+    color: white;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 15px;
+    background-color: #101010;
+    font-family: Roboto;
+}
+.bigtext{
+    font-size: 38px;
+    font-style: bold;
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+.midtext{
+    font-size: 30px;
+    font-family: Ubuntu;
+    padding: 1%;
+    font-weight: 600;
+}
