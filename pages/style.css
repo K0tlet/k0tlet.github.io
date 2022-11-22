@@ -8,7 +8,7 @@ html, body {
     grid-template-rows: 256px 1fr;
 }
 .bg{
-    background-image: url(https://64.media.tumblr.com/70c7fdf1c0af225de84d0787c33b027b/268a82ca6cb2a0f5-c6/s500x750/021df7474373701295ce311cf0bc29fd8e68e69a.gif), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8),rgba(0,0,0,1));
+    background-image: url(https://64.media.tumblr.com/70c7fdf1c0af225de84d0787c33b027b/268a82ca6cb2a0f5-c6/s500x750/021df7474373701295ce311cf0bc29fd8e68e69a.gif), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8),rgba(4,6,13,1));
     background-blend-mode:darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +23,7 @@ html, body {
     font-family: Ubuntu;
 }
 .name{
-    font-size: 90px;
+    font-size: 72px;
     text-align: center;
     vertical-align: middle;
     color: whitesmoke;
@@ -50,4 +50,24 @@ html, body {
     padding: 1%;
     font-weight: 600;
     color: rgb(230, 230, 230);
+}
+.image{
+    float: right;
+    max-width:35%;
+    max-height:35%;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px #3E8DE3;
+    transition: all 0.5s;
+}
+.image:hover{
+    box-shadow: 0px 0px 20px #018ABE;
+}
+a{
+    color:red;
+    transition: all 0.5s;
+}
+a:hover{
+    color:rgb(255,0,255);
+    text-shadow: 0px 0px 10px rgb(255,0,255);
 }

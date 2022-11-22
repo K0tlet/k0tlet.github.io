@@ -52,11 +52,10 @@ a{
     animation-duration: 2s;
 }
 
-
 .main{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 740px minmax(min-content, max-content) 256px;
+    grid-template-rows: 550px minmax(min-content, max-content) 256px;
 }
 
 .menumenu{
@@ -101,10 +100,11 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    background-image: url("https://www.ge.com/content/dam/gepower-new/global/en_US/images/gas-new-site/products/digital-and-controls/cybersecurity/hero-proven-cyber-security-expertise.jpg");
+    background-image: url("https://miro.medium.com/max/1200/1*HTC1oMKYwC7a8vUBsiplhw.gif");
+    /* background-image: url("https://www.ge.com/content/dam/gepower-new/global/en_US/images/gas-new-site/products/digital-and-controls/cybersecurity/hero-proven-cyber-security-expertise.jpg"); */
     background-size: cover;
+    background-position: center;
     background-blend-mode:darken;
-    background-color:rgb(0, 0, 0, 0.4);
     color: #D6E8EE;
 }
 .upperpan{
@@ -140,11 +140,11 @@ a{
     vertical-align: middle;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6),rgba(4,6,13,1));
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4),rgba(4,6,13,1));
 }
 .menus{
     height: 48px;
-    font-size: 32;     
+    font-size: 32;
 }
 .button{
     text-align: center;
@@ -188,6 +188,7 @@ a{
     max-height:70%;
     transition:all 0.5s;
     box-shadow: 0px 0px 10px #02457A;
+    border-radius: 15px;
 }
 .img:hover{
     box-shadow: 0px 0px 20px #018ABE;
@@ -208,14 +209,46 @@ a{
 
 .footer{
     display: grid;
-    grid-template-columns: 20% 20%;
-    grid-template-rows: 1fr 64px 1fr;
+    grid-template-columns: 1fr 80px 1fr ;
+    grid-template-rows: 1fr;
     justify-items: center;
     justify-content: center;
     vertical-align: middle;
     align-items: center;
     padding: 0px;
+    background-image: url("https://i.pinimg.com/originals/13/18/e1/1318e11aee7e8d6c9a9bf0f6368873a9.gif");
+    background-size: cover;
+    background-color: rgba(4,6,14,0.4);
+    background-position:0% 70%;
+    background-blend-mode:darken;
+    color: #D3D4D7;
 }
+.fitem{
+    width: 80%;
+    height: 200px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.about{
+    display: grid;
+    font-size: 30px;
+    font-family: Ubuntu;
+    grid-template-columns: 1fr;
+    grid-template-rows: 34px 1fr;
+}
+.contacts{
+    display: grid;
+    font-size: 30px;
+    font-family: Ubuntu;
+    grid-template-columns: 1fr;
+    grid-template-rows: 34px 1fr;
+}
+
+
 .link{
     font-size: 16px;
     font-family: Ubuntu;
@@ -230,7 +263,6 @@ a{
 .linka{
     height: 64px;
     width: 200px;
-    grid-row: 2;
     vertical-align: middle;
     align-items: center;
     justify-items: center;
@@ -274,7 +306,8 @@ a{
 /* ТЕМИ */
 .lighttheme{
     color: #D6E8EE;
-    background-color: #018ABE;
+    /* background-color: #018ABE; */
+    background-image: linear-gradient(#04060D,#018ABE 15%,#018ABE 85%,#04060D 100%);
 }
 .darktheme{
     color:#D3D4D7;
